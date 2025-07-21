@@ -19,10 +19,10 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="w-full px-6 py-4 bg-gray-900 text-white shadow-md fixed top-0 left-0 z-50">
+    <nav className="w-full px-6 py-4 shadow-md fixed top-0 left-0 z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo/Title */}
-        <Link href="/" className="text-2xl font-bold tracking-wide text-blue-400">
+        <Link href="/" className="text-2xl font-bold tracking-wide text-blue-500">
           MyPortfolio
         </Link>
 
@@ -32,7 +32,7 @@ const Navbar = () => {
             <Link
               key={index}
               href={item.href}
-              className="hover:text-blue-400 transition duration-300 border-b-2 border-transparent hover:border-blue-400"
+              className="hover:text-blue-500 transition duration-300 border-b-2 border-transparent hover:border-blue-500"
             >
               {item.label}
             </Link>

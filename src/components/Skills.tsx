@@ -54,7 +54,7 @@ const Skills = () => {
     ];
 
     return (
-        <section id="skills-page" className="min-h-screen bg-gray-900 text-white py-16 flex flex-col items-center">
+        <section id="skills-page" className="min-h-screen py-16 flex flex-col items-center">
             {/* Header Logos Section */}
             <div className="max-w-6xl flex flex-col items-center mb-20">
                 <h2 className="text-4xl font-bold text-center mb-10" data-aos="fade-up">

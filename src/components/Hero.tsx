@@ -15,16 +15,13 @@ const Hero = () => {
     }, []);
 
     return (
-        <section className="bg-gray-900 text-white py-16 mt-16 md:mt-20 lg:mt-24 px-4 sm:px-6 lg:px-8">
+        <section className="py-16 mt-16 md:mt-20 lg:mt-24 px-4 sm:px-6 lg:px-8">
             <div className="max-w-screen-xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-10 text-center md:text-left">
                 {/* Text Section */}
                 <div className="w-full md:w-1/2" data-aos="fade-right">
-                    {/* <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
-                        Hii I Am <span className="text-indigo-400">Atishay Jain</span>
-                    </h1> */}
                     <h1 className='text-3xl sm:text-4xl md:text-5xl font-bold leading-tight'>
                         Hi I Am{' '}
-                        <span className="text-indigo-400">
+                        <span className="text-blue-500">
                             <TypeAnimation
                                 sequence={[
                                     'Atishay Jain',
@@ -47,7 +44,7 @@ const Hero = () => {
                     <div className="mt-6 flex flex-wrap gap-4 justify-center md:justify-start" data-aos="fade-up" data-aos-delay="100">
                         <a
                             href="#"
-                            className="rounded bg-indigo-600 px-6 py-3 text-white font-medium hover:bg-indigo-700 transition"
+                            className="rounded bg-blue-500 px-6 py-3 text-white font-medium hover:bg-blue-600 transition"
                         >
                             View Projects
                         </a>
@@ -70,7 +67,7 @@ const Hero = () => {
 
                 {/* Image Section */}
                 <div className="w-full md:w-1/2 flex justify-center" data-aos="zoom-in-left">
-                    <div className="relative h-64 w-64 sm:h-72 sm:w-72 md:h-80 md:w-80 lg:h-96 lg:w-96 rounded-full overflow-hidden shadow-[0_0_50px_rgba(99,102,241,0.6)] ring-4 ring-indigo-500/30 animate-float">
+                    <div className="relative h-64 w-64 sm:h-72 sm:w-72 md:h-80 md:w-80 lg:h-96 lg:w-96 rounded-full overflow-hidden shadow-[0_0_50px_rgba(59,130,246,0.6)] ring-4 ring-blue-500/30 animate-float">
                         <Image
                             src={profile}
                             alt="Profile"

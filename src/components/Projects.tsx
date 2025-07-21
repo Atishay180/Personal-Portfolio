@@ -51,7 +51,7 @@ const Projects = () => {
     }, []);
 
     return (
-        <section id="projects-page" className="min-h-screen bg-gray-900 flex flex-col items-center text-white py-16">
+        <section id="projects-page" className="min-h-screen flex flex-col items-center py-16">
             <div className="max-w-6xl flex flex-col items-center">
                 <h2 className="text-4xl font-bold mb-12" data-aos="fade-up">
                     My <span className="text-indigo-500">Projects</span>
