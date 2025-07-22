@@ -61,7 +61,7 @@ const Projects = () => {
                     {projects.map((project, idx) => (
                         <div
                             key={idx}
-                            className="bg-gray-800 p-5 rounded-xl shadow-lg hover:shadow-indigo-500/30 transition duration-300 w-[300px] sm:w-[280px] md:w-[300px] lg:w-[320px]"
+                            className="bg-gray-900 p-5 rounded-xl shadow-lg hover:shadow-indigo-500/30 transition duration-300 w-[300px] sm:w-[280px] md:w-[300px] lg:w-[320px]"
                             data-aos="zoom-in-up"
                         >
                             {project.image && (

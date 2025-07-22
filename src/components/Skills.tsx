@@ -64,7 +64,7 @@ const Skills = () => {
                     {categoriesIcons.map((cat, idx) => (
                         <div
                             key={idx}
-                            className="flex flex-col items-center bg-gray-800 p-6 rounded-xl hover:scale-105 transition duration-300 shadow-md w-40"
+                            className="flex flex-col items-center bg-gray-900 p-6 rounded-xl hover:scale-105 transition duration-300 shadow-md w-40"
                         >
                             {cat.icon}
                             <span className="mt-3 text-lg font-medium">{cat.label}</span>
@@ -83,7 +83,7 @@ const Skills = () => {
                     {skillCategories.map((category, idx) => (
                         <div
                             key={idx}
-                            className="bg-gray-800 p-6 rounded-2xl shadow-md hover:shadow-indigo-500/30 transition duration-300 w-72"
+                            className="bg-gray-900 p-6 rounded-2xl shadow-md hover:shadow-indigo-500/30 transition duration-300 w-72"
                             data-aos="zoom-in-up"
                         >
                             <h3 className="text-xl font-semibold mb-4">{category.title}</h3>

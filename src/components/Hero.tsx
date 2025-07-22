@@ -15,7 +15,7 @@ const Hero = () => {
     }, []);
 
     return (
-        <section className="py-16 mt-16 md:mt-20 lg:mt-24 px-4 sm:px-6 lg:px-8">
+        <section className="py-16 md:mt-10 lg:mt-16 px-4 sm:px-6 lg:px-8">
             <div className="max-w-screen-xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-10 text-center md:text-left">
                 {/* Text Section */}
                 <div className="w-full md:w-1/2" data-aos="fade-right">
