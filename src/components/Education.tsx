@@ -55,7 +55,7 @@ export default function Education() {
                     className="text-4xl font-bold text-center mb-24"
                     data-aos="zoom-in"
                 >
-                    Education <span className="text-indigo-500">Timeline</span>
+                    Education <span className="text-blue-500">Timeline</span>
                 </h2>
 
                 <div className="relative border-l-2 border-blue-600 pl-8">
