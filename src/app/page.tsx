@@ -1,5 +1,7 @@
 'use client';
 
+import Achievements from "@/components/Achievements";
+import Contact from "@/components/Contact";
 import Education from "@/components/Education";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
@@ -14,6 +16,8 @@ export default function Home() {
       <Skills />
       <Projects />
       <Education />
+      <Achievements />
+      <Contact />
     </div>
   );
 }

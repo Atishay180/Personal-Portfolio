@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Image from "next/image";
-import profile from "@/../public/assets/profile.png";
+import { assets } from '../../public/assets/assets';
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -69,7 +69,7 @@ const Hero = () => {
                 <div className="w-full md:w-1/2 flex justify-center" data-aos="zoom-in-left">
                     <div className="relative h-64 w-64 sm:h-72 sm:w-72 md:h-80 md:w-80 lg:h-96 lg:w-96 rounded-full overflow-hidden shadow-[0_0_50px_rgba(59,130,246,0.6)] ring-4 ring-blue-500/30 animate-float">
                         <Image
-                            src={profile}
+                            src={assets.profile}
                             alt="Profile"
                             fill
                             className="object-contain brightness-100 transition-transform duration-300 hover:scale-105"

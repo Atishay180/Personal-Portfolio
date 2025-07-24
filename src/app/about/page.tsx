@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
-import profile from "@/../public/assets/profile.png"; // Update if needed
+import { assets } from "../../../public/assets/assets";
 
 const About = () => {
   useEffect(() => {
@@ -19,7 +19,7 @@ const About = () => {
         <div className="flex justify-center md:w-1/2" data-aos="fade-right">
           <div className="relative w-72 h-96 md:w-80 md:h-[26rem] rounded-2xl overflow-hidden border-4 border-indigo-500 shadow-lg shadow-indigo-500/30 hover:scale-105 transition-transform duration-300">
             <Image
-              src={profile}
+              src={assets.profile}
               alt="Atishay Jain"
               fill
               className="object-cover"

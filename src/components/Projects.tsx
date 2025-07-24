@@ -5,15 +5,12 @@ import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import chatAppImg from "@/../public/assets/chat-app.png";
-import healthCareImg from "@/../public/assets/health-care.png";
-import twitterCloneImg from "@/../public/assets/twiiter-clone.png";
-import onlineFoodImg from "@/../public/assets/online-food-delivery.png";
+import { assets } from "../../public/assets/assets";
 
 const projects = [
     {
         name: "Health Care Website",
-        image: healthCareImg,
+        image: assets.heathCare,
         tech: ["Next.js", "Firebase", "OpenAI API"],
         description: "An AI-powered platform for mock interviews, code practice, and tracking progress for tech job aspirants.",
         link: "https://youraiproject.vercel.app",
@@ -21,7 +18,7 @@ const projects = [
     },
     {
         name: "Online Food Ordering Website",
-        image: onlineFoodImg,
+        image: assets.onlineFood,
         tech: ["React", "Node.js", "MongoDB", "JWT"],
         description: "Secure admin and user dashboard for online food ordering with analytics, search, and role-based access.",
         link: "https://yourapp.live",
@@ -29,7 +26,7 @@ const projects = [
     },
     {
         name: "Real-Time Chat Application",
-        image: chatAppImg,
+        image: assets.chatApp,
         tech: ["MERN", "Tailwind CSS", "Socket.io"],
         description: "Real-time group and private chat app with typing indicators, presence, and clean UI/UX.",
         link: "https://yourapp.live",
@@ -37,7 +34,7 @@ const projects = [
     },
     {
         name: "Twitter Clone",
-        image: twitterCloneImg,
+        image: assets.twitterClone,
         tech: ["MERN", "Tailwind CSS", "Socket.io"],
         description: "A social media app with tweet, comment, like, follow, and live feed features.",
         link: "https://yourapp.live",
