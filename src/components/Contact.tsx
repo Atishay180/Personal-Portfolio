@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaInstagram, FaFacebookF, FaLinkedin  } from "react-icons/fa";
+import { IoIosSend } from "react-icons/io";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -19,28 +20,28 @@ const Contact = () => {
             {/* Left Side */}
             <div className="md:w-1/2 space-y-8 mb-10 md:mb-0" data-aos="fade-right">
                 <h2 className="text-4xl font-bold leading-snug">
-                    Let’s discuss <br /> on something <span className="text-pink-500">cool</span> together
+                    Let’s discuss <br /> on something <span className="text-pink-600">cool</span> together
                 </h2>
 
                 <div className="space-y-4">
                     <div className="flex items-center gap-3 text-lg">
-                        <FaEnvelope className="text-pink-500" />
+                        <FaEnvelope className="text-pink-600" />
                         atishayjain@gmail.com
                     </div>
                     <div className="flex items-center gap-3 text-lg">
-                        <FaPhoneAlt className="text-pink-500" />
+                        <FaPhoneAlt className="text-pink-600" />
                         9893312749
                     </div>
                     <div className="flex items-center gap-3 text-lg">
-                        <FaMapMarkerAlt className="text-pink-500" />
+                        <FaMapMarkerAlt className="text-pink-600" />
                         Jabalpur MP
                     </div>
                 </div>
 
                 <div className="flex gap-5 mt-6 text-xl">
-                    <FaFacebookF className="cursor-pointer hover:text-pink-500" />
-                    <FaInstagram className="cursor-pointer hover:text-pink-500" />
-                    <FaLinkedin className="cursor-pointer hover:text-pink-500" />
+                    <FaFacebookF className="cursor-pointer hover:text-pink-600" />
+                    <FaInstagram className="cursor-pointer hover:text-pink-600" />
+                    <FaLinkedin className="cursor-pointer hover:text-pink-600" />
                 </div>
             </div>
 
@@ -88,11 +89,7 @@ const Contact = () => {
                         type="submit"
                         className="bg-pink-600 hover:bg-pink-700 text-white py-2 px-6 rounded-lg flex items-center gap-2 mt-4"
                     >
-                        <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth="2"
-                             viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round"
-                                  d="M14.752 11.168l-9.804-3.92a1 1 0 00-1.316 1.316l3.92 9.804a1 1 0 001.884.048l1.585-4.263a1 1 0 01.597-.597l4.263-1.585a1 1 0 00-.048-1.884z"/>
-                        </svg>
+                        <IoIosSend />
                         Send Message
                     </button>
                 </form>
