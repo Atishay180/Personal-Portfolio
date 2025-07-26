@@ -16,7 +16,7 @@ const Contact = () => {
     }, []);
 
     return (
-        <section className="min-h-screen bg-gray-900 text-white border border-gray-600 flex flex-col md:flex-row items-center justify-center px-6 md:px-20 py-10 rounded-xl">
+        <section id="contact" className="bg-gray-900 text-white border border-gray-600 flex flex-col md:flex-row items-center justify-center px-6 md:px-20 py-10 rounded-xl">
             {/* Left Side */}
             <div className="md:w-1/2 space-y-8 mb-10 md:mb-0" data-aos="fade-right">
                 <h2 className="text-4xl font-bold leading-snug">

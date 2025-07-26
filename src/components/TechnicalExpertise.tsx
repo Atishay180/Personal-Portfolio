@@ -34,7 +34,7 @@ const TechnicalExpertise = () => {
     ];
 
     return (
-        <section className="my-32">
+        <section className="my-12 md:mt-20">
             <h2
                 className="text-3xl md:text-4xl font-bold text-center mb-10 lg:mb-14"
                 data-aos="fade-down"

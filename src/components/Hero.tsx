@@ -15,7 +15,7 @@ const Hero = () => {
     }, []);
 
     return (
-        <section className="py-16 md:mt-10 lg:mt-16 px-4 sm:px-6 lg:px-8">
+        <section className="py-12 md:mt-10 lg:mt-12 px-4 sm:px-6 lg:px-8">
             <div className="max-w-screen-xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-10 text-center md:text-left">
                 {/* Text Section */}
                 <div className="w-full md:w-1/2" data-aos="fade-right">
@@ -44,13 +44,13 @@ const Hero = () => {
                     <div className="mt-6 flex flex-wrap gap-4 justify-center md:justify-start" data-aos="fade-up" data-aos-delay="100">
                         <a
                             href="#"
-                            className="rounded bg-blue-500 px-6 py-3 text-white font-medium hover:bg-blue-600 transition"
+                            className="rounded w-48 bg-blue-500 px-6 py-3 text-white text-center font-medium hover:bg-blue-600 transition"
                         >
                             View Projects
                         </a>
                         <a
                             href="#"
-                            className="rounded border border-gray-600 px-6 py-3 text-gray-300 font-medium hover:bg-gray-800 transition"
+                            className="rounded w-48 border border-gray-600 px-6 py-3 text-gray-300 text-center font-medium hover:bg-gray-800 transition"
                         >
                             Download Resume
                         </a>

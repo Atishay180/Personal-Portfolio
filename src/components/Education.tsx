@@ -14,7 +14,7 @@ export default function Education() {
             subtitle: "BTech - CSE",
             time: "2021 - 2025",
             description: [
-                "INTERNSHIP at web Development and Designing in OASIS INFOTECH.",
+                "Completed a 4-year graduation in Computer Science and Engineering.",
                 "CGPA: 8.27",
             ],
             icon: <MdWork className="text-xl" />,
@@ -25,18 +25,18 @@ export default function Education() {
             subtitle: "Higher Secondary Education",
             time: "2020 - 2021",
             description: [
-                "I have studied basic software engineering subjects like DS, Algorithms, DBMS, etc.",
+                "Completed 12th standard with PCM stream.",
                 "Percentage: 63.2%",
             ],
             icon: <FaGraduationCap className="text-xl" />,
             button: { label: "Website", url: "#" },
         },
         {
-            title: "Small Wonders Senior Secondary School",
+            title: "Stemfield International School",
             subtitle: "Senior Secondary Education",
             time: "2018 - 2019",
             description: [
-                "I have studied science stream subjects like Physics, Chemistry, Mathematics etc.",
+                "Completed 10th standard under CBSE board with a focus on foundational subjects.",
                 "Percentage: 64.8%",
             ],
             icon: <FaSchool className="text-xl" />,
@@ -49,7 +49,7 @@ export default function Education() {
     }, []);
 
     return (
-        <div id="education-page" className="w-full flex flex-col items-center py-16">
+        <div id="education-page" className="w-full flex flex-col items-center py-12">
             <div className="py-6 md:py-12 border-white w-[80vw]">
                 <h2
                     className="text-4xl font-bold text-center mb-24"
@@ -79,12 +79,12 @@ export default function Education() {
                             <div className="absolute -left-10 -top-4 w-4 h-4 bg-blue-600 rounded-full border-2 border-white z-10"></div>
 
                             {/* Time Label */}
-                            <div className="absolute left-2 -top-6 bg-gray-500 text-sm px-3 py-1 rounded-full">
+                            <div className="absolute left-2 -top-6 bg-gray-600 text-sm px-3 py-1 rounded-full">
                                 {item.time}
                             </div>
 
                             {/* Title Box */}
-                            <div className="ml-2 bg-gray-800 p-4 rounded-t-lg border border-black">
+                            <div className="ml-2 bg-gray-900 p-4 rounded-t-lg border border-black">
                                 <div className="flex items-center gap-2 font-bold text-lg">
                                     {item.icon} {item.title}
                                 </div>
@@ -92,7 +92,7 @@ export default function Education() {
                             </div>
 
                             {/* Description Box */}
-                            <div className="ml-2 p-4 border border-t-0 border-black rounded-b-lg bg-gray-500">
+                            <div className="ml-2 p-4 border border-t-0 border-black rounded-b-lg bg-gray-600">
                                 {item.description.map((line, i) => (
                                     <p key={i} className="text-sm">
                                         <span className="text-red-600 mr-1">*</span>
@@ -102,7 +102,7 @@ export default function Education() {
                                 <a
                                     href={item.button.url}
                                     target="_blank"
-                                    className="inline-block mt-2 bg-gray-800 text-white px-3 py-1 text-sm rounded"
+                                    className="inline-block mt-2 bg-gray-900 text-white px-3 py-1 text-sm rounded"
                                 >
                                     {item.button.label}
                                 </a>

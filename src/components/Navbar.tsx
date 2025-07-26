@@ -17,7 +17,6 @@ const Navbar = () => {
   const navbarItems: NavbarItems[] = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
-    { href: "/contact", label: "Contact" },
     { href: "#projects-page", label: "Projects" },
     { href: "#education-page", label: "Education" },
   ];

@@ -45,8 +45,8 @@ const Achievements = () => {
     ];
 
     return (
-        <section className="my-28">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-14" data-aos="fade-down">
+        <section className="md:mt-12 mb-24">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-10" data-aos="fade-down">
                 Achievements & <span className="text-blue-500">Certifications</span>
             </h2>
 
