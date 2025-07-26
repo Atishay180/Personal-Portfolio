@@ -4,41 +4,13 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
-import { assets } from "../../public/assets/assets"; // Adjust path if needed
+
+import { skills } from "@/content/skills";
 
 const Skills = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
-
-  const skills = {
-    "Programming Languages": [
-      { name: "JavaScript", logo: assets.logoJs },
-      { name: "C++", logo: assets.logoCpp },
-      { name: "Core Java", logo: assets.logoJava },
-    ],
-    "Frontend Technologies": [
-      { name: "HTML", logo: assets.logoHtml },
-      { name: "CSS", logo: assets.logoCss },
-      { name: "React.js", logo: assets.logoReact },
-    ],
-    "Server Technologies": [
-      { name: "Node.js", logo: assets.logoNodeJs },
-      { name: "Express.js", logo: assets.logoExpressJs },
-      { name: "MVC Architecture", logo: assets.logoSE }, 
-    ],
-    Database: [{ name: "MongoDB", logo: assets.logoMongoDb }],
-    Frameworks: [
-      { name: "Bootstrap", logo: assets.logoBootstrap },
-      { name: "Tailwind CSS", logo: assets.logoTailwindCss },
-      { name: "Next.js", logo: assets.logoNextJs },
-    ],
-    "CS Fundamentals": [
-      { name: "Data Structures", logo: assets.logoDSA },
-      { name: "OOP", logo: assets.logoOOP },
-      { name: "Software Engineering", logo: assets.logoSE },
-    ],
-  };
 
   return (
     <div

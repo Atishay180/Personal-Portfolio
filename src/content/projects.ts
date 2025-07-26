@@ -1,68 +1,41 @@
-import {Projects} from "@/types"
+import { Projects } from "@/types"
+import { assets } from "../../public/assets/assets";
 
-export const project: Projects[] = [
+export const projects: Projects[] = [
     {
-        title: 'E-commerce Platform',
-        description: 'A full-stack e-commerce platform built with Next.js, TypeScript, and Tailwind CSS.',
-        technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Stripe'],
-        githubLink: 'https://github.com',
-        demoLink: 'https://demo.com',
-        image: '/projects/e-commerce-website.png',
-      },
-      {
-        title: 'Task Management App',
-        description: 'A collaborative task management application with real-time updates.',
-        technologies: ['React', 'Node.js', 'MongoDB', 'Socket.io'],
-        githubLink: 'https://github.com',
-        demoLink: 'https://demo.com',
-        image: '/projects/task-manager.webp',
-      },
-      {
-        title: 'Portfolio Website',
-        description: 'My personal portfolio website showcasing my projects and skills.',
-        technologies: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
-        githubLink: 'https://github.com',
-        demoLink: 'https://demo.com',
-        image: '/projects/portfolio-website.jpg',
-      },
-      {
-        title: 'Blog Platform',
-        description: 'A blogging platform with user authentication and markdown support.',
-        technologies: ['Gatsby', 'GraphQL', 'Contentful'],
-        githubLink: 'https://github.com',
-        demoLink: 'https://demo.com',
-        image: '/projects/blog-website.jpeg',
-      },
-      {
-        title: 'Weather App',
-        description: 'A weather application that provides real-time weather updates.',
-        technologies: ['React', 'OpenWeatherMap API'],
-        githubLink: 'https://github.com',
-        demoLink: 'https://demo.com',
-        image: '/projects/weather-app.png',
-      },
-      {
-        title: 'Chat Application',
-        description: 'A real-time chat application using WebSocket technology.',
-        technologies: ['React', 'Node.js', 'Socket.io'],
-        githubLink: 'https://github.com',
-        demoLink: 'https://demo.com',
-        image: '/projects/chat-app.png',
-      },
-      {
-        title: 'Recipe Finder',
-        description: 'A recipe search application using the Edamam API.',
-        technologies: ['React', 'Edamam API'],
-        githubLink: 'https://github.com',
-        demoLink: 'https://demo.com',
-        image: '/projects/recipe-finder.png',
-      },
-      {
-        title: 'Expense Tracker',
-        description: 'A personal finance tracker to manage expenses and income.',
-        technologies: ['React', 'Firebase'],
-        githubLink: 'https://github.com',
-        demoLink: 'https://demo.com',
-        image: '/projects/expense-tracker.webp',
-      }
-]
+        name: "Healthcare Website",
+        image: assets.heathCare,
+        tech: ["MERN Stack", "Tailwind CSS", "Cloudinary", "AOS", "Stripe"],
+        description:
+            "Role-based portal for doctors, users, and admins with real-time availability, appointment booking, secure login, and online payments.",
+        link: "https://healthcare-website-y0yg.onrender.com",
+        github: "https://github.com/Atishay180/Healthcare-Website",
+    },
+    {
+        name: "Online Food Ordering Website",
+        image: assets.onlineFood,
+        tech: ["MERN Stack", "Cloudinary", "Stripe"],
+        description:
+            "Admin dashboard for managing orders, inventory, and users with dynamic menu browsing and real-time updates.",
+        link: "https://food-ecommerce-website-frontend.onrender.com",
+        github: "https://github.com/Atishay180/Food-Delivery-Website",
+    },
+    {
+        name: "Real-Time Chat Application",
+        image: assets.chatApp,
+        tech: ["MERN", "Tailwind CSS", "Socket.io"],
+        description:
+            "Group/private chat app with typing indicators, real-time presence tracking, media sharing, and smooth UX.",
+        link: "https://chat-application-c3n5.onrender.com",
+        github: "https://github.com/Atishay180/Chat-App",
+    },
+    {
+        name: "Twitter Clone",
+        image: assets.twitterClone,
+        tech: ["MERN Stack", "Tailwind CSS", "TanStack Query", "Cloudinary"],
+        description:
+            "Twitter-like platform with tweeting, following, liking, media uploads, and real-time feed updates.",
+        link: "https://twitter-clone-7340.onrender.com",
+        github: "https://github.com/Atishay180/Twitter-Clone",
+    },
+];
