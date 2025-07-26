@@ -19,28 +19,28 @@ const Achievements = () => {
             title: "ISTQB Certified Tester",
             description: "Certified for foundational knowledge in software testing principles and techniques.",
             image: assets.istqb,
-            link: "https://example.com/istqb-certificate", // replace with your link
+            link: "https://drive.google.com/file/d/1qdCwneCwG48pycuMyi6ZZndFGHxLrTyD/view?usp=drive_link",
         },
         {
             icon: <FaCertificate className="text-blue-400 text-4xl" />,
             title: "AWS Certified Cloud Practitioner",
             description: "Earned foundational certification from AWS demonstrating cloud fluency and understanding of core services.",
             image: assets.awsPractitioner,
-            link: "https://example.com/aws-practitioner", // replace with your link
+            link: "https://drive.google.com/file/d/1coqEQ6zUk7FJf4S0WfO2poaGLfkmU936/view?usp=drive_link",
         },
         {
             icon: <FaCertificate className="text-green-400 text-4xl" />,
             title: "AWS Cloud Foundations",
             description: "Completed introductory training on AWS core services, global infrastructure, and pricing models.",
             image: assets.awsFoundation,
-            link: "https://example.com/aws-foundation", // replace with your link
+            link: "https://drive.google.com/file/d/1JOIkD1nmTfb2O-_QJnRHi65K5b8qQHFP/view?usp=drive_link",
         },
         {
             icon: <FaCertificate className="text-green-400 text-4xl" />,
             title: "Certificate of Appreciation",
             description: "Recognized for conducting training workshops on AWS Cloud and Modern Web Development during academic tenure.",
             image: assets.appreciation,
-            link: "https://example.com/appreciation", // replace with your link
+            link: "https://drive.google.com/file/d/1jpBAX4wvCJK84beYiEFFCR5a4grnYkYm/view?usp=drive_link", 
         },
     ];
 

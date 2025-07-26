@@ -16,7 +16,7 @@ const Contact = () => {
     }, []);
 
     return (
-        <section id="contact" className="bg-gray-900 text-white border border-gray-600 flex flex-col md:flex-row items-center justify-center px-6 md:px-20 py-10 rounded-xl">
+        <section id="contact-page" className="bg-gray-900 text-white border border-gray-600 flex flex-col md:flex-row items-center justify-center px-6 md:px-20 py-10 rounded-xl">
             {/* Left Side */}
             <div className="md:w-1/2 space-y-8 mb-10 md:mb-0" data-aos="fade-right">
                 <h2 className="text-4xl font-bold leading-snug">
@@ -25,22 +25,22 @@ const Contact = () => {
 
                 <div className="space-y-4">
                     <div className="flex items-center gap-3 text-lg">
-                        <FaEnvelope className="text-pink-600" />
+                        <FaEnvelope className="text-pink-500" />
                         atishayjain@gmail.com
                     </div>
                     <div className="flex items-center gap-3 text-lg">
-                        <FaPhoneAlt className="text-pink-600" />
+                        <FaPhoneAlt className="text-pink-500" />
                         9893312749
                     </div>
                     <div className="flex items-center gap-3 text-lg">
-                        <FaMapMarkerAlt className="text-pink-600" />
+                        <FaMapMarkerAlt className="text-pink-500" />
                         Jabalpur MP
                     </div>
                 </div>
 
-                <div className="flex gap-5 mt-6 text-xl">
-                    <FaFacebookF className="cursor-pointer hover:text-pink-600" />
+                <div className="flex gap-5 mt-6 text-2xl">
                     <FaInstagram className="cursor-pointer hover:text-pink-600" />
+                    <FaFacebookF className="cursor-pointer hover:text-pink-600" />
                     <FaLinkedin className="cursor-pointer hover:text-pink-600" />
                 </div>
             </div>

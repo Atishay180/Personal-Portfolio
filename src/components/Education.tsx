@@ -95,7 +95,7 @@ export default function Education() {
                             <div className="ml-2 p-4 border border-t-0 border-black rounded-b-lg bg-gray-600">
                                 {item.description.map((line, i) => (
                                     <p key={i} className="text-sm">
-                                        <span className="text-red-600 mr-1">*</span>
+                                        <span className="text-white text-xl mr-1">-</span>
                                         {line}
                                     </p>
                                 ))}

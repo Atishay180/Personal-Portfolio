@@ -9,36 +9,40 @@ import { assets } from "../../public/assets/assets";
 
 const projects = [
     {
-        name: "Health Care Website",
+        name: "Healthcare Website",
         image: assets.heathCare,
-        tech: ["Next.js", "Firebase", "OpenAI API"],
-        description: "An AI-powered platform for mock interviews, code practice, and tracking progress for tech job aspirants.",
-        link: "https://youraiproject.vercel.app",
-        github: "https://github.com/yourgithub/ai-interview",
+        tech: ["MERN Stack", "Tailwind CSS", "Cloudinary", "AOS", "Stripe"],
+        description:
+            "Role-based portal for doctors, users, and admins with real-time availability, appointment booking, secure login, and online payments.",
+        link: "https://healthcare-website-y0yg.onrender.com",
+        github: "https://github.com/Atishay180/Healthcare-Website",
     },
     {
         name: "Online Food Ordering Website",
         image: assets.onlineFood,
-        tech: ["React", "Node.js", "MongoDB", "JWT"],
-        description: "Secure admin and user dashboard for online food ordering with analytics, search, and role-based access.",
-        link: "https://yourapp.live",
-        github: "https://github.com/yourgithub/healthcare-dashboard",
+        tech: ["MERN Stack", "Cloudinary", "Stripe"],
+        description:
+            "Admin dashboard for managing orders, inventory, and users with dynamic menu browsing and real-time updates.",
+        link: "https://food-ecommerce-website-frontend.onrender.com",
+        github: "https://github.com/Atishay180/Food-Delivery-Website",
     },
     {
         name: "Real-Time Chat Application",
         image: assets.chatApp,
         tech: ["MERN", "Tailwind CSS", "Socket.io"],
-        description: "Real-time group and private chat app with typing indicators, presence, and clean UI/UX.",
-        link: "https://yourapp.live",
-        github: "https://github.com/yourgithub/video-stream-app",
+        description:
+            "Group/private chat app with typing indicators, real-time presence tracking, media sharing, and smooth UX.",
+        link: "https://chat-application-c3n5.onrender.com",
+        github: "https://github.com/Atishay180/Chat-App",
     },
     {
         name: "Twitter Clone",
         image: assets.twitterClone,
-        tech: ["MERN", "Tailwind CSS", "Socket.io"],
-        description: "A social media app with tweet, comment, like, follow, and live feed features.",
-        link: "https://yourapp.live",
-        github: "https://github.com/yourgithub/video-stream-app",
+        tech: ["MERN Stack", "Tailwind CSS", "TanStack Query", "Cloudinary"],
+        description:
+            "Twitter-like platform with tweeting, following, liking, media uploads, and real-time feed updates.",
+        link: "https://twitter-clone-7340.onrender.com",
+        github: "https://github.com/Atishay180/Twitter-Clone",
     },
 ];
 
@@ -58,7 +62,7 @@ const Projects = () => {
                     {projects.map((project, idx) => (
                         <div
                             key={idx}
-                            className="bg-gray-900 rounded-2xl shadow-lg hover:shadow-blue-500/30 hover:scale-105 transition duration-300 flex flex-col"
+                            className="bg-gray-900 rounded-xl shadow-lg hover:shadow-blue-500/30 hover:scale-105 transition duration-300 flex flex-col"
                             data-aos="zoom-in-up"
                         >
                             {project.image && (

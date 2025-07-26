@@ -8,6 +8,7 @@ import "aos/dist/aos.css";
 import { TypeAnimation } from 'react-type-animation';
 
 import { FaInstagram, FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa";
+import Link from 'next/link';
 
 const Hero = () => {
     useEffect(() => {
@@ -37,19 +38,19 @@ const Hero = () => {
                     </h1>
 
                     <p className="mt-4 sm:mt-6 text-base sm:text-lg text-gray-300" data-aos="fade-up">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, nisi. Natus, provident
-                        accusamus impedit minima harum corporis iusto.
+                        B.Tech CSE Graduate (2025). I am a passionate Full Stack Developer and an Automation Tester with experience in building scalable web applications and automating end-to-end test flows.
                     </p>
 
                     <div className="mt-6 flex flex-wrap gap-4 justify-center md:justify-start" data-aos="fade-up" data-aos-delay="100">
-                        <a
-                            href="#"
+                        <Link
+                            href="#projects-page"
                             className="rounded w-48 bg-blue-500 px-6 py-3 text-white text-center font-medium hover:bg-blue-600 transition"
                         >
                             View Projects
-                        </a>
+                        </Link>
                         <a
-                            href="#"
+                            target='_blank'
+                            href="https://drive.google.com/file/d/1TvhGlTHJN8vGBNpqyHMQMXFvzwK4u0zX/view?usp=drive_link"
                             className="rounded w-48 border border-gray-600 px-6 py-3 text-gray-300 text-center font-medium hover:bg-gray-800 transition"
                         >
                             Download Resume
@@ -57,11 +58,11 @@ const Hero = () => {
                     </div>
 
                     {/* Social Icons */}
-                    <div className="mt-8 flex gap-6 justify-center md:justify-start text-2xl text-gray-400" data-aos="zoom-in" data-aos-delay="200">
-                        <a href="#" className="hover:text-pink-500 transition animate-pulse"><FaInstagram /></a>
-                        <a href="#" className="hover:text-blue-500 transition animate-pulse"><FaLinkedin /></a>
-                        <a href="#" className="hover:text-white transition animate-pulse"><FaGithub /></a>
-                        <a href="#" className="hover:text-blue-400 transition animate-pulse"><FaFacebook /></a>
+                    <div className="mt-8 flex gap-6 justify-center md:justify-start text-4xl text-gray-300" data-aos="zoom-in" data-aos-delay="200">
+                        <a href="https://www.instagram.com/atishay180" target='_blank' className="hover:text-pink-400"><FaInstagram /></a>
+                        <a href="https://www.linkedin.com/in/atishay180/" target='_blank' className="hover:text-pink-400"><FaLinkedin /></a>
+                        <a href="https://github.com/Atishay180" target='_blank' className="hover:text-pink-400"><FaGithub /></a>
+                        <a href="https://www.facebook.com/share/14GQrjiaS4G/" target='_blank' className="hover:text-pink-400"><FaFacebook /></a>
                     </div>
                 </div>
 

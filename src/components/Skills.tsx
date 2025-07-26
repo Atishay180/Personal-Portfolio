@@ -42,6 +42,7 @@ const Skills = () => {
 
   return (
     <div
+      id="skills-page"
       className="rounded-2xl shadow-lg bg-gray-900 p-12 border border-gray-700"
       data-aos="fade-up"
     >
