@@ -1,14 +1,15 @@
 import React, { useEffect } from 'react';
 import Image from "next/image";
-import { assets } from '../../public/assets/assets';
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 import { TypeAnimation } from 'react-type-animation';
 
-import { FaInstagram, FaLinkedin, FaGithub, FaFacebook } from "react-icons/fa";
 import Link from 'next/link';
+
+import { assets } from '../../public/assets/assets';
+import { contact } from '@/content/contact';
 
 const Hero = () => {
     useEffect(() => {
@@ -59,10 +60,16 @@ const Hero = () => {
 
                     {/* Social Icons */}
                     <div className="mt-8 flex gap-6 justify-center md:justify-start text-4xl text-gray-300" data-aos="zoom-in" data-aos-delay="200">
-                        <a href="https://www.instagram.com/atishay180" target='_blank' className="hover:text-pink-400"><FaInstagram /></a>
-                        <a href="https://www.linkedin.com/in/atishay180/" target='_blank' className="hover:text-pink-400"><FaLinkedin /></a>
-                        <a href="https://github.com/Atishay180" target='_blank' className="hover:text-pink-400"><FaGithub /></a>
-                        <a href="https://www.facebook.com/share/14GQrjiaS4G/" target='_blank' className="hover:text-pink-400"><FaFacebook /></a>
+                        {contact.socialMedia.map((item, index) => (
+                            <a
+                                key={index}
+                                href={item.url}
+                                target='_blank'
+                                className="hover:text-pink-400"
+                            >
+                                <item.logo />
+                            </a>
+                        ))}
                     </div>
                 </div>
 

@@ -1,12 +1,13 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaInstagram, FaFacebookF, FaLinkedin  } from "react-icons/fa";
+import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 import { IoIosSend } from "react-icons/io";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const discussionTopic = ["Web Development", "Hiring Opportunity", "Automation Testing", "Other"];
+import { contact } from "@/content/contact";
 
 const Contact = () => {
     const [selectedInterest, setSelectedInterest] = useState("Web Development");
@@ -20,28 +21,34 @@ const Contact = () => {
             {/* Left Side */}
             <div className="md:w-1/2 space-y-8 mb-10 md:mb-0" data-aos="fade-right">
                 <h2 className="text-4xl font-bold leading-snug">
-                    Let’s discuss <br /> on something <span className="text-pink-600">cool</span> together
+                    Let’s discuss <br /> on something <span className="text-pink-500">cool</span> together
                 </h2>
 
                 <div className="space-y-4">
                     <div className="flex items-center gap-3 text-lg">
                         <FaEnvelope className="text-pink-500" />
-                        atishayjain@gmail.com
+                        {contact.email}
                     </div>
                     <div className="flex items-center gap-3 text-lg">
                         <FaPhoneAlt className="text-pink-500" />
-                        9893312749
+                        {contact.mobile}
                     </div>
                     <div className="flex items-center gap-3 text-lg">
                         <FaMapMarkerAlt className="text-pink-500" />
-                        Jabalpur MP
+                        {contact.address}
                     </div>
                 </div>
 
                 <div className="flex gap-5 mt-6 text-2xl">
-                    <FaInstagram className="cursor-pointer hover:text-pink-600" />
-                    <FaFacebookF className="cursor-pointer hover:text-pink-600" />
-                    <FaLinkedin className="cursor-pointer hover:text-pink-600" />
+                    {contact.socialMedia.map((item, index) => (
+                        <a
+                            key={index}
+                            target="_blank"
+                            href={item.url}
+                        >
+                            {<item.logo className="cursor-pointer hover:text-pink-500" />}
+                        </a>
+                    ))}
                 </div>
             </div>
 
@@ -53,15 +60,14 @@ const Contact = () => {
                 <p className="font-medium mb-4">Let discuss...</p>
 
                 <div className="flex flex-wrap gap-3 mb-6">
-                    {discussionTopic.map((topic) => (
+                    {contact.discussionTopics.map((topic) => (
                         <button
                             key={topic}
                             onClick={() => setSelectedInterest(topic)}
-                            className={`px-4 py-2 rounded-full border ${
-                                selectedInterest === topic
-                                    ? "bg-pink-600 text-white border-pink-600"
-                                    : "bg-white border-gray-300 text-black hover:bg-gray-100"
-                            }`}
+                            className={`px-4 py-2 rounded-full border ${selectedInterest === topic
+                                ? "bg-pink-600 text-white border-pink-600"
+                                : "bg-white border-gray-300 text-black hover:bg-gray-100"
+                                }`}
                         >
                             {topic}
                         </button>

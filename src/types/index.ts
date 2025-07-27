@@ -46,3 +46,15 @@ export interface TechnicalExpertise {
     text: string
 }
 
+export interface Contact {
+    discussionTopics: string[],
+    email: string,
+    mobile: string,
+    address: string,
+    socialMedia: {
+        title: string;
+        url: string;
+        logo: IconType;
+    }[],
+}
+
