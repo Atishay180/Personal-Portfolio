@@ -8,9 +8,45 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import { contact } from "@/content/contact";
+import toast from "react-hot-toast";
+import axios from "axios";
 
 const Contact = () => {
     const [selectedInterest, setSelectedInterest] = useState("Web Development");
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+    const [loading, setLoading] = useState(false);
+
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        setLoading(true);
+
+        const wordCount = message.trim().split(/\s+/).length;
+
+        if (wordCount < 10 || wordCount > 1000) {
+            toast.error("Message must be between 10 and 1000 words.");
+            setLoading(false);
+            return;
+        }
+
+        try {
+            const { data } = await axios.post(`/api/send-email`, { name, email, message, topic: selectedInterest })
+
+            if (data.success) {
+                toast.success("Message sent successfully")
+            }
+
+            setName("");
+            setEmail("");
+            setMessage("");
+            setSelectedInterest("Web Development");
+        } catch (error: any) {
+            toast.error(error?.response?.data?.error || error.message || "Something went wrong");
+        } finally {
+            setLoading(false);
+        }
+    }
 
     useEffect(() => {
         AOS.init({ duration: 800 });
@@ -74,29 +110,44 @@ const Contact = () => {
                     ))}
                 </div>
 
-                <form className="space-y-4">
+                <form onSubmit={handleSubmit} className="space-y-4">
                     <input
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
                         type="text"
                         placeholder="Your name"
                         className="w-full border-b border-pink-600 py-2 outline-none"
+                        required
                     />
                     <input
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
                         type="email"
                         placeholder="Your email"
                         className="w-full border-b border-pink-600 py-2 outline-none"
+                        required
                     />
                     <textarea
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
                         placeholder="Your message"
                         rows={3}
                         className="w-full border-b border-pink-600 py-2 outline-none"
+                        required
                     ></textarea>
 
                     <button
                         type="submit"
-                        className="bg-pink-600 hover:bg-pink-700 text-white py-2 px-6 rounded-lg flex items-center gap-2 mt-4"
+                        className="bg-pink-600 hover:bg-pink-700 text-white py-2 px-6 cursor-pointer rounded-lg flex items-center gap-2 mt-4"
                     >
-                        <IoIosSend />
-                        Send Message
+                        {!loading ?
+                            (
+                                <>
+                                    <IoIosSend /> Send Message
+                                </>
+                            ) : (
+                                "Loading..."
+                            )}
                     </button>
                 </form>
             </div>
