@@ -41,8 +41,9 @@ const Contact = () => {
             setEmail("");
             setMessage("");
             setSelectedInterest("Web Development");
-        } catch (error: any) {
-            toast.error(error?.response?.data?.error || error.message || "Something went wrong");
+        } catch (error: unknown) {
+            const err = error as { response?: { data?: { error?: string } }; message?: string };
+            toast.error(err?.response?.data?.error || err.message || "Something went wrong");
         } finally {
             setLoading(false);
         }
