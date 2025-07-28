@@ -38,4 +38,13 @@ export const projects: Projects[] = [
         link: "https://twitter-clone-7340.onrender.com",
         github: "https://github.com/Atishay180/Twitter-Clone",
     },
+    {
+        name: "Personal Portfolio",
+        image: assets.personalPortfolio,
+        tech: ["Next Js", "Tailwind CSS", "AOS Animations", "Framer-Motion"],
+        description:
+            "Interactive and responsive developer portfolio built using Next.js, showcasing projects, skills, and education with smooth animations and theme support.",
+        link: "https://personal-portfolio-git-main-atishayjain8807-6179s-projects.vercel.app/",
+        github: "https://github.com/Atishay180/Personal-Portfolio",
+    },
 ];

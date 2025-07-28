@@ -23,7 +23,7 @@ const Projects = () => {
                     {projects.map((project, idx) => (
                         <div
                             key={idx}
-                            className="bg-gray-900 border border-gray-700 rounded-xl shadow-lg hover:shadow-blue-500/30 hover:scale-105 transition duration-300 flex flex-col"
+                            className="bg-gray-900 border border-gray-700 rounded-lg shadow-lg hover:shadow-blue-500/30 hover:scale-105 transition duration-300 flex flex-col"
                             data-aos="zoom-in-up"
                         >
                             {project.image && (

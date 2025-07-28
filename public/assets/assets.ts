@@ -7,6 +7,7 @@ import chatApp from "./chat-app.png"
 import heathCare from "./health-care.png"
 import onlineFood from "./online-food-delivery.png"
 import twitterClone from "./twiiter-clone.png"
+import personalPortfolio from "./personalPortfolio.png"
 
 import profile from "./profile.png"
 
@@ -35,6 +36,7 @@ export const assets = {
     heathCare,
     onlineFood,
     twitterClone,
+    personalPortfolio,
     profile,
 
     logoBootstrap,
