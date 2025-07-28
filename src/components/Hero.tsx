@@ -38,28 +38,28 @@ const Hero = () => {
                         </span>
                     </h1>
 
-                    <p className="mt-4 sm:mt-6 text-base sm:text-lg text-gray-300" data-aos="fade-up">
+                    <p className="mt-4 md:mt-6 text-sm md:text-lg text-gray-400" data-aos="fade-up">
                         B.Tech CSE Graduate (2025). I am a passionate Full Stack Developer and an Automation Tester with experience in building scalable web applications and automating end-to-end test flows.
                     </p>
 
-                    <div className="mt-6 flex flex-wrap gap-4 justify-center md:justify-start" data-aos="fade-up" data-aos-delay="100">
+                    <div className="mt-6 flex gap-2 md:gap-4 justify-center md:justify-start" data-aos="fade-up" data-aos-delay="100">
                         <Link
                             href="#projects-page"
-                            className="rounded w-48 bg-blue-500 px-6 py-3 text-white text-center font-medium hover:bg-blue-600 transition"
+                            className="rounded text-sm md:text-base bg-blue-500 px-3 sm:px-4 md:px-6 py-3 text-white text-center font-medium hover:bg-blue-600 transition"
                         >
                             View Projects
                         </Link>
                         <a
                             target='_blank'
                             href="https://drive.google.com/file/d/1TvhGlTHJN8vGBNpqyHMQMXFvzwK4u0zX/view?usp=drive_link"
-                            className="rounded w-48 border border-gray-600 px-6 py-3 text-gray-300 text-center font-medium hover:bg-gray-800 transition"
+                            className="rounded text-sm md:text-base border border-gray-600 px-3 sm:px-4 md:px-6 py-3 text-gray-300 text-center font-medium hover:bg-gray-800 transition"
                         >
                             Download Resume
                         </a>
                     </div>
 
                     {/* Social Icons */}
-                    <div className="mt-8 flex gap-6 justify-center md:justify-start text-4xl text-gray-300" data-aos="zoom-in" data-aos-delay="200">
+                    <div className="mt-8 flex gap-6 justify-center md:justify-start text-2xl md:text-4xl text-gray-300" data-aos="zoom-in" data-aos-delay="200">
                         {contact.socialMedia.map((item, index) => (
                             <a
                                 key={index}
@@ -67,7 +67,7 @@ const Hero = () => {
                                 target='_blank'
                                 className="hover:text-pink-400"
                             >
-                                <item.logo />
+                                <item.logo/>
                             </a>
                         ))}
                     </div>

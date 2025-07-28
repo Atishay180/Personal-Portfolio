@@ -23,7 +23,7 @@ const Achievements = () => {
                         data-aos="fade-up"
                         data-aos-delay={index * 100}
                         key={index}
-                        className="flex flex-col sm:flex-row-reverse items-center sm:items-start gap-4 p-6 rounded-xl border border-gray-600 bg-gray-900 w-full lg:max-w-3xl mx-auto"
+                        className="flex flex-col sm:flex-row-reverse items-center sm:items-start gap-4 p-6 rounded-xl border border-gray-700 bg-gray-900 w-full lg:max-w-3xl mx-auto"
                     >
                         <div className="w-full sm:w-48 h-44 flex-shrink-0 overflow-hidden rounded-lg">
                             <Image

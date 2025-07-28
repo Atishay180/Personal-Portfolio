@@ -28,7 +28,7 @@ const TechnicalExpertise = () => {
                 {technicalExpertise.map((item, idx) => (
                     <div
                         key={idx}
-                        className="flex flex-col items-center justify-center bg-gradient-to-br from-gray-800 to-gray-900 p-4 md:p-6 rounded-2xl shadow-md hover:shadow-blue-500/40 transform transition-transform hover:scale-105 duration-300"
+                        className="flex flex-col items-center justify-center border border-gray-700 bg-gradient-to-br from-gray-800 to-gray-900 p-4 md:p-6 rounded-2xl shadow-md hover:shadow-blue-500/40 transform transition-transform hover:scale-105 duration-300"
                         data-aos="fade-up"
                         data-aos-delay={idx * 150}
                     >
