@@ -13,10 +13,10 @@ const Projects = () => {
     }, []);
 
     return (
-        <section id="projects-page" className="mt-20 py-8 md:py-16">
+        <section id="projects-page" className="mt-20 py-8 md:py-10">
             <div className="max-w-6xl mx-auto text-center">
-                <h2 className="text-4xl font-bold mb-14" data-aos="fade-up">
-                    My <span className="text-blue-500">Projects</span>
+                <h2 className="text-4xl text-center font-bold mb-5 md:mb-10" data-aos="fade-up">
+                    Personal <span className="text-blue-500">Projects</span>
                 </h2>
 
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -30,7 +30,7 @@ const Projects = () => {
                                 <Image
                                     src={project.image}
                                     alt={project.name}
-                                    className="rounded-t-2xl w-full h-48 object-cover"
+                                    className="rounded-t-lg w-full h-48 object-cover"
                                 />
                             )}
 
