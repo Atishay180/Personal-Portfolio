@@ -1,6 +1,7 @@
 'use client';
 
 import Achievements from "@/components/Achievements";
+import Chatbot from "@/components/Chatbot";
 import Contact from "@/components/Contact";
 import Education from "@/components/Education";
 import Hero from "@/components/Hero";
@@ -11,6 +12,9 @@ import TechnicalExpertise from "@/components/TechnicalExpertise";
 export default function Home() {
   return (
     <div className="px-6 md:px-10 py-4 flex flex-col gap-6">
+
+      <Chatbot />
+
       <Hero />
       <TechnicalExpertise />
       <Skills />
