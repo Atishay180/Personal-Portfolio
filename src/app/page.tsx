@@ -1,7 +1,8 @@
 'use client';
 
+import Chatbot from "@/components/chatbot/Chatbot";
+
 import Achievements from "@/components/Achievements";
-import Chatbot from "@/components/Chatbot";
 import Contact from "@/components/Contact";
 import Education from "@/components/Education";
 import Hero from "@/components/Hero";
