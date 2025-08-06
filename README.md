@@ -1,6 +1,6 @@
 # Personal Portfolio 🌐
 
-This is a **personal portfolio website** built using **Next.js App Router**, Tailwind CSS, and TypeScript. It showcases projects, skills, resume, social profiles, and more, designed to highlight both frontend and backend experience.
+This is a **AI Powered Personal Portfolio Website** built using **Next.js App Router**, Tailwind CSS, and TypeScript. It showcases projects, skills, resume, social profiles, and more, designed to highlight both frontend and backend experience.
 
 ---
 
@@ -8,6 +8,7 @@ This is a **personal portfolio website** built using **Next.js App Router**, Tai
 
 - **Framework:** Next.js (App Router)
 - **Language:** TypeScript
+- **AI-Platform:** Groq
 - **Styling:** Tailwind CSS
 - **Animation:** AOS (Animate On Scroll), Framer-Motion (Text Animation)
 - **Icons:** React Icons
@@ -18,7 +19,7 @@ This is a **personal portfolio website** built using **Next.js App Router**, Tai
 
 ## 🌐 Live Demo
 
-🔗 [Live Website]("Coming Soon")  
+🔗 [Live Website](https://personal-portfolio-git-main-atishayjain8807-6179s-projects.vercel.app)  
 
 ---
 
