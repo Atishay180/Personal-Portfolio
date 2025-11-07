@@ -31,7 +31,13 @@ const Contact = () => {
         }
 
         try {
-            const { data } = await axios.post(`/api/send-email`, { name, email, message, topic: selectedInterest })
+            // const { data } = await axios.post(`/api/send-email`, { name, email, message, topic: selectedInterest })
+
+            const res = await fetch("/api/send-email", {
+                method: "POST",
+                body: JSON.stringify({ name, email, message, topic: selectedInterest }),
+            });
+            const data = await res.json();
 
             if (data.success) {
                 toast.success("Message sent successfully")
