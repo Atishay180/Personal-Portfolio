@@ -10,6 +10,7 @@ import twitterClone from "./twiiter-clone.png"
 import personalPortfolio from "./personalPortfolio.png"
 
 import profile from "./profile.png"
+import logoPortfolio from "./logoPortfolio.png"
 
 import logoBootstrap from "./logoBootstrap.png"
 import logoCpp from "./logoCpp.png"
@@ -39,6 +40,7 @@ export const assets = {
     personalPortfolio,
     profile,
 
+    logoPortfolio,
     logoBootstrap,
     logoCpp,
     logoCss,

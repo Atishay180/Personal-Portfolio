@@ -12,10 +12,10 @@ export const transporter = nodemailer.createTransport({
 //send email to user to let them know that their query has been sent
 export const sendEmailToUser = async ({ email, name, message, topic }: UserEmailTemplate) => {
     const htmlTemplate = USER_QUERY_EMAIL_TEMPLATE
-        .replace('{{name}}', name)
-        .replace('{{topic}}', topic)
-        .replace('{{message}}', message)
-        .replace('{{contactEmail}}', process.env.NODEMAILER_EMAIL!)
+        .replaceAll('{{name}}', name)
+        .replaceAll('{{topic}}', topic)
+        .replaceAll('{{message}}', message)
+        .replaceAll('{{contactEmail}}', process.env.NODEMAILER_EMAIL!)
 
     const mailOptions = {
         from: `"Atishay's Portfolio" <${process.env.NODEMAILER_EMAIL!}>`,
@@ -30,10 +30,10 @@ export const sendEmailToUser = async ({ email, name, message, topic }: UserEmail
 //send email to owner(me) to let them know that user has sent a query
 export const sendEmailToOwner = async ({ name, email, message, topic }: OwnerEmailTemplate) => {
     const htmlTemplate = OWNER_EMAIL_TEMPLATE
-        .replace('{{name}}', name)
-        .replace('{{email}}', email)
-        .replace('{{topic}}', topic)
-        .replace('{{message}}', message);
+        .replaceAll('{{name}}', name)
+        .replaceAll('{{email}}', email)
+        .replaceAll('{{topic}}', topic)
+        .replaceAll('{{message}}', message);
 
     const mailOptions = {
         from: `"Atishay's Portfolio" <${process.env.NODEMAILER_EMAIL!}>`,

@@ -12,7 +12,7 @@ export const USER_QUERY_EMAIL_TEMPLATE = `<!DOCTYPE html>
   .outer { width:100%; padding:36px 20px; box-sizing:border-box; }
   .container { max-width:600px; margin:0 auto; background:#111214; border:1px solid #232428; border-radius:10px; overflow:hidden; }
   .header { display:flex; align-items:center; gap:14px; padding:20px 24px; }
-  .logo { width:120px; height:auto; display:block; }
+  .logo { width:40px; height:auto; padding-right:4px; display:block; }
   .support-note { color:#9aa0a6; font-size:13px; }
   .preview-wrap { padding:0 24px 18px; text-align:center; }
   .preview-img { width:100%; max-width:520px; border-radius:10px; border:1px solid #222427; display:block; margin:0 auto; }
@@ -39,7 +39,7 @@ export const USER_QUERY_EMAIL_TEMPLATE = `<!DOCTYPE html>
         <table role="presentation" class="container" width="100%">
           <tr>
             <td class="header">
-              <img src="{{logoUrl}}" alt="Atishay's Portfolio Logo" class="logo" />
+              <img src="https://res.cloudinary.com/dg8lfsyon/image/upload/v1762581557/logoWithoutName_g8l3e5.png" alt="Atishay's Portfolio Logo" class="logo" />
               <div>
                 <div style="font-size:14px; color:#E6EEF6; font-weight:600;">Atishay Jain</div>
                 <div class="support-note">Typically reply within 24 - 48 hours</div>
@@ -50,7 +50,7 @@ export const USER_QUERY_EMAIL_TEMPLATE = `<!DOCTYPE html>
           <!-- Top website preview image -->
           <tr>
             <td class="preview-wrap">
-              <img src="https://res.cloudinary.com/dg8lfsyon/image/upload/v1762542660/personal-portfolio_uuhlt4.png" alt="Website preview" class="preview-img" />
+              <img src="https://res.cloudinary.com/dg8lfsyon/image/upload/v1762581273/Screenshot_114_bqaxun.png" alt="Website preview" class="preview-img" />
             </td>
           </tr>
 
@@ -107,7 +107,7 @@ export const OWNER_EMAIL_TEMPLATE = `<!DOCTYPE html>
   .outer { width:100%; padding:36px 20px; box-sizing:border-box; }
   .container { max-width:700px; margin:0 auto; background:#111214; border:1px solid #232428; border-radius:10px; overflow:hidden; }
   .header { display:flex; align-items:center; gap:14px; padding:20px 24px; }
-  .logo { width:120px; height:auto; display:block; }
+  .logo { width:40px; height:auto; padding-right:4px; display:block; }
   .support-note { color:#9aa0a6; font-size:13px; }
   .preview-wrap { padding:0 24px 18px; text-align:center; }
   .preview-img { width:100%; max-width:640px; border-radius:10px; border:1px solid #222427; display:block; margin:0 auto; }
@@ -141,7 +141,7 @@ export const OWNER_EMAIL_TEMPLATE = `<!DOCTYPE html>
           <!-- Header -->
           <tr>
             <td class="header">
-              <img src="{{logoUrl}}" alt="Atishay's Portfolio Logo" class="logo" />
+              <img src="https://res.cloudinary.com/dg8lfsyon/image/upload/v1762581557/logoWithoutName_g8l3e5.png" alt="Atishay's Portfolio Logo" class="logo" />
               <div>
                 <div style="font-size:14px; color:#E6EEF6; font-weight:700;">Atishay Jain</div>
                 <div class="support-note">New inquiry received — quick summary below</div>
@@ -152,7 +152,7 @@ export const OWNER_EMAIL_TEMPLATE = `<!DOCTYPE html>
           <!-- Optional top website preview image -->
           <tr>
             <td class="preview-wrap">
-              <img src="https://res.cloudinary.com/dg8lfsyon/image/upload/v1762542660/personal-portfolio_uuhlt4.png" alt="Website preview" class="preview-img" />
+              <img src="https://res.cloudinary.com/dg8lfsyon/image/upload/v1762581273/Screenshot_114_bqaxun.png" alt="Website preview" class="preview-img" />
             </td>
           </tr>
 
@@ -163,10 +163,11 @@ export const OWNER_EMAIL_TEMPLATE = `<!DOCTYPE html>
               <p>You received a new message via your portfolio contact form. Quick details are below — click the button to view the full conversation in the app or reply directly.</p>
 
               <div class="meta" role="navigation" aria-label="message meta">
-                <div class="pill">From: <strong style="margin-left:6px; color:#E6EEF6;">{{name}}</strong></div>
-                <div class="pill">Email: <a href="mailto:{{email}}" style="color:#FFB86B; margin-left:6px;">{{email}}</a></div>
-                <div class="pill">Topic: <strong style="margin-left:6px; color:#E6EEF6;">{{topic}}</strong></div>
+                <div class="pill"><strong>From:</strong> {{name}}</div>
+                <div class="pill"><strong>Email:</strong> <a href="mailto:{{email}}" style="color:#FFB86B;">{{email}}</a></div>
+                <div class="pill"><strong>Topic:</strong> {{topic}}</div>
               </div>
+
 
               <div style="color:#9aa0a6; font-size:13px; margin-bottom:6px;">Message</div>
               <div class="message-card">{{message}}</div>
