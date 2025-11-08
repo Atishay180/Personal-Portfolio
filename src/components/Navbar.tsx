@@ -1,8 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
+import { assets } from "../../public/assets/assets";
 
 interface NavbarItems {
   href: string;
@@ -25,9 +27,8 @@ const Navbar = () => {
         {/* Logo */}
         <Link
           href="/"
-          className="text-xl md:text-3xl font-extrabold bg-gradient-to-r from-blue-500 to-blue-400 text-transparent bg-clip-text tracking-tight"
         >
-          My<span className="text-white">Portfolio</span>
+          <Image src={assets.logoPortfolio} className="w-28 sm:w-32 md:w-36 h-auto" alt="Logo" width={50} height={50} />
         </Link>
 
         {/* Desktop Nav */}
@@ -58,7 +59,7 @@ const Navbar = () => {
         className={`md:hidden fixed top-0 right-0 h-full w-3/4 max-w-xs bg-gray-900 text-white p-6 transform transition-transform duration-300 z-40
         ${isOpen ? "translate-x-0" : "translate-x-full"}`}
       >
-        <h1 className="text-xl font-bold mb-10 text-blue-500">My<span className="text-white">Portfolio</span></h1>
+        <Image src={assets.logoPortfolio} className="w-28 sm:w-32 md:w-36 h-auto mb-10" alt="Logo" width={50} height={50} />
 
         <nav className="flex flex-col gap-6 text-lg">
           {navbarItems.map((item, index) => (
