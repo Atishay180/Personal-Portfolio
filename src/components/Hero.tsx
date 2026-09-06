@@ -39,7 +39,7 @@ const Hero = () => {
                     </h1>
 
                     <p className="mt-4 md:mt-6 text-sm md:text-lg text-gray-400" data-aos="fade-up">
-                        B.Tech CSE Graduate (2025). I am a passionate Full Stack Developer and an Automation Tester with experience in building scalable web applications and automating end-to-end test flows.
+                        Full-stack developer and automation engineer. I build React/Next.js apps with real backends, and the Playwright/Selenium frameworks that keep them from breaking in production.
                     </p>
 
                     <div className="mt-6 flex gap-2 md:gap-4 justify-center md:justify-start" data-aos="fade-up" data-aos-delay="100">
@@ -51,7 +51,7 @@ const Hero = () => {
                         </Link>
                         <a
                             target='_blank'
-                            href="https://drive.google.com/file/d/1TvhGlTHJN8vGBNpqyHMQMXFvzwK4u0zX/view?usp=drive_link"
+                            href="https://drive.google.com/file/d/1CcxRRQWSKdmJRqxUQxuDEJgY-XFLKebu/view?usp=drive_link"
                             className="rounded text-sm md:text-base border border-gray-600 px-3 sm:px-4 md:px-6 py-3 text-gray-300 text-center font-medium hover:bg-gray-800 transition"
                         >
                             Download Resume
@@ -67,7 +67,7 @@ const Hero = () => {
                                 target='_blank'
                                 className="hover:text-pink-400"
                             >
-                                <item.logo/>
+                                <item.logo />
                             </a>
                         ))}
                     </div>

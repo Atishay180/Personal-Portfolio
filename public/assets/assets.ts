@@ -1,5 +1,6 @@
 import awsPractitioner from "./aws-practitioner.png"
 import awsFoundation from "./aws-foundation.png"
+import risingStar2026 from "./rising-star-award-2026.png"
 import istqb from "./istqb.png"
 import appreciation from "./appreciation.png"
 
@@ -8,6 +9,7 @@ import heathCare from "./health-care.png"
 import onlineFood from "./online-food-delivery.png"
 import twitterClone from "./twiiter-clone.png"
 import personalPortfolio from "./personalPortfolio.png"
+import resumeGenAI from "./resumeGenAI.png"
 
 import profile from "./profile.png"
 import logoPortfolio from "./logoPortfolio.png"
@@ -28,16 +30,22 @@ import logoReact from "./logoReact.png"
 import logoSE from "./logoSE.png"
 import logoTailwindCss from "./logoTailwindCss.png"
 
+import logoSelenium from "./logoSelenium.svg"
+import logoPlaywright from "./logoPlaywright.svg"
+import logoPostman from "./logoPostman.svg"
+
 export const assets = {
     awsPractitioner,
     awsFoundation,
     istqb,
     appreciation,
+    risingStar2026,
     chatApp,
     heathCare,
     onlineFood,
     twitterClone,
     personalPortfolio,
+    resumeGenAI,
     profile,
 
     logoPortfolio,
@@ -55,5 +63,9 @@ export const assets = {
     logoOOP,
     logoReact,
     logoSE,
-    logoTailwindCss
+    logoTailwindCss,
+
+    logoSelenium,
+    logoPlaywright,
+    logoPostman
 };
