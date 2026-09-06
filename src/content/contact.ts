@@ -2,7 +2,7 @@ import { FaInstagram, FaFacebookF, FaLinkedin, FaGithub } from "react-icons/fa";
 import { Contact } from "@/types";
 
 export const contact: Contact = {
-    discussionTopics: ["Full-Stack Development", "Test Automation (Selenium/Playwright)", "Hiring Opportunity", "Freelance Project", "Open Source Collaboration", "Something Else"],
+    discussionTopics: ["Full-Stack Development", "Test Automation (Playwright/Selenium)", "Hiring Opportunity", "Freelance Project", "Open Source Collaboration", "Something Else"],
 
     email: "atishayjain8807@gmail.com",
     mobile: "9893312749",

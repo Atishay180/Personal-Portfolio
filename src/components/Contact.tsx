@@ -113,7 +113,7 @@ const Contact = () => {
                         <button
                             key={topic}
                             onClick={() => setSelectedInterest(topic)}
-                            className={`px-4 py-2 rounded-full border ${selectedInterest === topic
+                            className={`px-4 py-2 rounded-full border text-left ${selectedInterest === topic
                                 ? "bg-pink-600 text-white border-pink-600"
                                 : "bg-white border-gray-300 text-black hover:bg-gray-100"
                                 }`}
