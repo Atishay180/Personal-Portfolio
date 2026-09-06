@@ -84,8 +84,7 @@ You represent Atishay Jain professionally — maintain a helpful, polished, and 
          temperature: 0.7,
       })
 
-      // return result.toUIMessageStreamResponse()
-      return result;
+      return result.toUIMessageStreamResponse()
 
    } catch (error) {
 
