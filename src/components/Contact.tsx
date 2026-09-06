@@ -12,7 +12,7 @@ import toast from "react-hot-toast";
 import axios from "axios";
 
 const Contact = () => {
-    const [selectedInterest, setSelectedInterest] = useState("Web Development");
+    const [selectedInterest, setSelectedInterest] = useState("Full-Stack Development");
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
@@ -46,7 +46,7 @@ const Contact = () => {
             setName("");
             setEmail("");
             setMessage("");
-            setSelectedInterest("Web Development");
+            setSelectedInterest("Full-Stack Development");
         } catch (error: unknown) {
             if (error instanceof Error) {
                 toast.error(error.message || "Something went wrong");

@@ -21,6 +21,14 @@ export const achievements: Achievements[] = [
     },
     {
         icon: FaCertificate,
+        iconClassName: "text-blue-400 text-4xl",
+        title: "Rising Star Award 2026",
+        description: "Recognized for outstanding performance in current organization.",
+        image: assets.risingStar2026,
+        link: "https://drive.google.com/file/d/1MSJuBW4aex4pJ2digANwJ-eDAHWpPLMc/view?usp=drive_link",
+    },
+    {
+        icon: FaCertificate,
         iconClassName: "text-green-400 text-4xl",
         title: "AWS Cloud Foundations",
         description: "Completed introductory training on AWS core services, global infrastructure, and pricing models.",
